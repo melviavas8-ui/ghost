@@ -25,6 +25,15 @@ public class Feature implements UiMetrics {
    public static long NANOS_PER_SECOND = 1000000000L;
    public static MinecraftClient mc = MinecraftClient.getInstance();
 
+   /** Always prefer live instance — static init can be null if class loads too early. */
+   public static MinecraftClient mc() {
+      MinecraftClient live = MinecraftClient.getInstance();
+      if (live != null) {
+         mc = live;
+      }
+      return mc;
+   }
+
    public boolean isFriend(PlayerEntity playerEntity) {
       return DaamkyFriend.getInstance().isPlayerEntity(playerEntity);
    }
@@ -140,6 +149,6 @@ public class Feature implements UiMetrics {
    }
 
    protected boolean inGame() {
-      return mc.player != null && mc.world != null;
+      MinecraftClient c = mc(); return c != null && c.player != null && c.world != null;
    }
 }
