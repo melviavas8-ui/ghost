@@ -4,6 +4,7 @@
   "package": "recovered.fabric.mixin.profile",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ClientTickMixin",
     "HudProfileMixin",
     "SessionProfileMixin"
   ],

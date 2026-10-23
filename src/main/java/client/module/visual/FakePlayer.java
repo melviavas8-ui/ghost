@@ -36,7 +36,7 @@ public class FakePlayer extends Module {
    @Override
    public void onEnable() {
       if (this.inGame()) {
-         this.otherClientPlayerEntity = new OtherClientPlayerEntity(this.clientWorld(), new GameProfile(UUID.randomUUID(), "System"));
+         this.otherClientPlayerEntity = new OtherClientPlayerEntity(this.clientWorld(), new GameProfile(UUID.randomUUID(), "Daamky"));
          this.otherClientPlayerEntity.setPosition(this.player().getPos());
          this.otherClientPlayerEntity.setYaw(this.player().getYaw());
          this.otherClientPlayerEntity.setPitch(this.player().getPitch());

@@ -33,7 +33,7 @@ public class StatsHud extends RenderElement {
    private static final float value277 = 3.0F;
    private static final float value278 = 6.0F;
    private static final float value279 = 0.001F;
-   private static final String text = "System";
+   private static final String text = "Daamky";
    private static final float value280 = 0.06F;
    private static final float value281 = 0.1F;
    private static final float value282 = 0.25F;
@@ -101,7 +101,7 @@ public class StatsHud extends RenderElement {
       this.interpolation2 = new Interpolation();
       this.booleanSettingArray = new BooleanSetting[]{null, this.showFps, this.showPing, this.showTps, this.showBps};
       this.floatArray5 = new float[]{1.0F, 1.0F, 1.0F, 1.0F, 1.0F};
-      this.stringArray2 = new String[]{"System", "0 Fps", "0 MS", "0.0 TPS", "0.0 BPS"};
+      this.stringArray2 = new String[]{"Daamky", "0 Fps", "0 MS", "0.0 TPS", "0.0 BPS"};
       this.stringArray3 = new String[]{"", "0", "0", "0.0", "0.0"};
       this.floatArray6 = new float[value287];
       this.floatArray7 = new float[value287];
@@ -131,7 +131,7 @@ public class StatsHud extends RenderElement {
    }
 
    private float getFloat28() {
-      return this.getFloatByInt2(0) + this.getFloat29() + TextShader.getFloatByStringFloat("System", 14.0F) + this.getFloatByInt(0);
+      return this.getFloatByInt2(0) + this.getFloat29() + TextShader.getFloatByStringFloat("Daamky", 14.0F) + this.getFloatByInt(0);
    }
 
    private float getFloatByInt(int count) {
@@ -504,7 +504,7 @@ public class StatsHud extends RenderElement {
                      int i1 = Theme.foreground();
                      float f29 = 14.0F;
                      float f28 = f40;
-                     String s = "System";
+                     String s = "Daamky";
                      TextShader.onFloatFloatIntFloatFloatStringMatrix4f(f37, f28, i1, f29, f11, s, matrix4f);
                   } else {
                      if (this.value288 > 0.001F) {
